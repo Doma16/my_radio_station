@@ -7,7 +7,9 @@ authors = [
     { name = "Doma16", email = "domasaric@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "yt-dlp>=2026.10.26",
+]
 
 [project.scripts]
 my-radio-station = "my_radio_station:main"
