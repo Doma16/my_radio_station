@@ -30,4 +30,4 @@ class SongDownload:
         with yt_dlp.YoutubeDL(self.ydl_opts) as ydl:
             info = ydl.extract_info(song_name, download=True)
             path = Path(info["entries"][0]["requested_downloads"][0]["filename"])
-            return str(path.with_suffix(".mp3"))
+            return path.with_suffix(".mp3")
